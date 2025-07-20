@@ -1,3 +1,24 @@
+// Import the functions you need from the SDKs you need
+import { initializeApp } from "firebase/app";
+import { getAnalytics } from "firebase/analytics";
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
+
+// Your web app's Firebase configuration
+// For Firebase JS SDK v7.20.0 and later, measurementId is optional
+const firebaseConfig = {
+  apiKey: "AIzaSyC32yf-Y9tplEf6oGK7VNFT1YxHQeqyNjs",
+  authDomain: "films-c5fcd.firebaseapp.com",
+  projectId: "films-c5fcd",
+  storageBucket: "films-c5fcd.firebasestorage.app",
+  messagingSenderId: "430954203672",
+  appId: "1:430954203672:web:084393e865db89d8a5d16d",
+  measurementId: "G-ZP3DV6DHN3"
+};
+
+// Initialize Firebase
+const app = initializeApp(firebaseConfig);
+const analytics = getAnalytics(app);
 // Egyptian Movies Game - In-Memory Demo Version (compliant with sandbox)
 
 // IMPORTANT: This demo version keeps all data in memory only.
